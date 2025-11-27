@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мотивация и поддержка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Мобильное меню (бургер) -->
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <header>
+            <h1>Ваш мотивационный помощник</h1>
+            <nav class="main-nav" id="mainNav">
+                <button class="nav-btn active" data-page="motivation">
+                    <span class="nav-icon">🎯</span>
+                    <span class="nav-text">Мотивационный тест</span>
+                </button>
+                <button class="nav-btn" data-page="game">
+                    <span class="nav-icon">🎮</span>
+                    <span class="nav-text">Игры на разгрузку</span>
+                </button>
+                <button class="nav-btn" data-page="article">
+                    <span class="nav-icon">📚</span>
+                    <span class="nav-text">Статья</span>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Страница 1: Мотивационный тест -->
+            <section id="motivation-page" class="page active">
+                <div class="page-header">
+                    <h2>Пройдите короткий тест</h2>
+                    <p>Ответьте на 3 вопроса и получите персональную мотивационную картинку</p>
+                </div>
+                
+                <div class="quiz-wrapper">
+                    <div id="quiz-container">
+                        <!-- Вопросы будут генерироваться через JS -->
+                    </div>
+                    <div id="result" class="result-container" style="display: none;">
+                        <h3>Ваша персональная мотивация!</h3>
+                        <div class="image-wrapper">
+                            <img id="motivation-image" src="" alt="Ваша мотивационная картинка">
+                        </div>
+                        <button id="retry-btn" class="retry-btn">Пройти тест еще раз</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Страница 2: Игры в VK -->
+            <section id="game-page" class="page">
+                <div class="page-header">
+                    <h2>Игры в VK</h2>
+                    <p>Отличный способ отвлечься и получить удовольствие</p>
+                </div>
+                
+                <div class="games-grid">
+                    <!-- Игра 1 -->
+                    <div class="game-card">
+                        <div class="game-icon">🎣</div>
+                        <div class="game-info">
+                            <h3>Fishing Online Simulator</h3>
+                            <p>Реалистичный симулятор рыбалки с красивой графикой</p>
+                            <a href="https://vk.com/fishingonlinesimulator?dmcah=&from_layer=1&loc=games&mid=495097928&tc=YXRjX9wAGADOAxUI9QHOaSh39gIBA7BhcHBzX2dhbWVzX2dlbnJlBM531MLIBaAGwAcACKAJAAqUAMAB3AAQAAABAAIMAwAEAAWgBqAH2SMxNzc4MTgwODc2LjE4NTkuMTc2NDI1OTgzMDc5Mi44MzcwMwsA" 
+                               target="_blank" 
+                               class="game-link">
+                                <span class="vk-icon">VK</span>
+                                Играть сейчас
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Игра 4 -->
+                    <div class="game-card">
+                        <div class="game-icon">💰</div>
+                        <div class="game-info">
+                            <h3>Открути всё</h3>
+                            <p>Захватывающая игра с вращающимися элементами и призами</p>
+                            <a href="https://vk.com/app53603592?tc=YXRjX9wAGADOAzHtCAHOaSiplQIEA7phcHBzX2dhbWVzX3JlY29tbWVuZGF0aW9ucwTOSPFfNgWgBsAHAAigCQAKlADAAdwAEAAAAQACDwMABAAFoAagB9kjMjE3NzAyNTk5My4xNjc5LjE3NjQyNzI1MzMxOTguNjMyODcLAA" 
+                               target="_blank" 
+                               class="game-link">
+                                <span class="vk-icon">VK</span>
+                                Играть сейчас
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Игра 3 -->
+                    <div class="game-card">
+                        <div class="game-icon">🎮</div>
+                        <div class="game-info">
+                            <h3>Увлекательная аркада</h3>
+                            <p>Классическая игра для поднятия настроения</p>
+                            <a href="https://vk.com/app52914976?tc=YXRjX9wAGADOAydrIAHOaShuEAIBA7phcHBzX2dhbWVzX2NhdGFsb2dfZ3Jvd2luZwTOCvXXtQWgBsAHAAigCQAKlADAAdwAEAAAAQACDwMABAAFoAagB6AL" 
+                               target="_blank" 
+                               class="game-link">
+                                <span class="vk-icon">VK</span>
+                                Играть сейчас
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Игра 2 -->
+                    <div class="game-card">
+                        <div class="game-icon">⚗️</div>
+                        <div class="game-info">
+                            <h3>Reagenti 25</h3>
+                            <p>Увлекательная химическая головоломка</p>
+                            <a href="https://vk.com/reagenti25?tc=YXRjX9wAGADOAy_4tgHOaSh3yAIGA7phcHBzX2dhbWVzX3JlY29tbWVuZGF0aW9ucwTOYACIgwWgBsAHAAigCQAKlADAAdwAEAAAAQACDwMABAAFoAagB9kjMzkwNzkzOTA5Mi4xODczLjE3NjQyNTk3ODQ1MzMuNjcwNzILAA" 
+                               target="_blank" 
+                               class="game-link">
+                                <span class="vk-icon">VK</span>
+                                Играть сейчас
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="games-description">
+                    <h3>Почему игры помогают?</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <span class="benefit-icon">😌</span>
+                            <h4>Снижение стресса</h4>
+                            <p>Игры помогают отвлечься от повседневных забот</p>
+                        </div>
+                        <div class="benefit-card">
+                            <span class="benefit-icon">🧠</span>
+                            <h4>Развитие мышления</h4>
+                            <p>Головоломки тренируют логику и внимание</p>
+                        </div>
+                        <div class="benefit-card">
+                            <span class="benefit-icon">🎯</span>
+                            <h4>Достижение целей</h4>
+                            <p>Маленькие победы поднимают самооценку</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Страница 3: Статья -->
+            <section id="article-page" class="page">
+                <div class="page-header">
+                    <h2>Как бороться с эмоциональным выгоранием</h2>
+                    <p>Практические советы для восстановления энергии</p>
+                </div>
+                
+                <article class="article-content">
+                    <div class="article-section">
+                        <h3>🔍 Признаки выгорания</h3>
+                        <ul>
+                            <li>Постоянная усталость и отсутствие энергии</li>
+                            <li>Снижение мотивации и продуктивности</li>
+                            <li>Раздражительность и цинизм</li>
+                            <li>Проблемы со сном и концентрацией</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-section">
+                        <h3>💡 Практические шаги</h3>
+                        <div class="tips-grid">
+                            <div class="tip-card">
+                                <h4>Делайте перерывы</h4>
+                                <p>Регулярные короткие перерывы в работе помогают восстановить концентрацию и снизить стресс.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Физическая активность</h4>
+                                <p>Даже 15-минутная прогулка может значительно улучшить ваше состояние.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Здоровый сон</h4>
+                                <p>Старайтесь спать 7-9 часов и соблюдайте режим дня.</p>
+                            </div>
+                            <div class="tip-card">
+                                <h4>Социальные связи</h4>
+                                <p>Общение с близкими и друзьями помогает снизить уровень стресса.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-section">
+                        <h3>🚨 Когда обращаться за помощью</h3>
+                        <p>Если симптомы не проходят в течение нескольких недель, рекомендуется обратиться к психологу или терапевту.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Мотивационный помощник. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
